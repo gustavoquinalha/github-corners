@@ -24,9 +24,8 @@ p {
 }
 
 .wrapper {
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 50px;
+    padding: 20px;
+    box-sizing: border-box;
     max-width: 580px;
     margin: auto;
 }
@@ -80,23 +79,23 @@ p {
   0% {
     transform: rotate(0deg);
   }
-  
+
   20% {
     transform: rotate(-25deg);
   }
-  
+
   40% {
     transform: rotate(10deg);
   }
-  
+
   60% {
    transform: rotate(-25deg);
   }
-  
+
   80% {
     transform: rotate(10deg);
   }
-  
+
   100% {
     transform: rotate(0deg);
   }
@@ -119,7 +118,6 @@ p {
 footer {
     width: 100%;
     margin-top: 25px;
-    margin-bottom: 100px;
     background: #F3F3F3;
     height: 50px;
     padding: 15px;
@@ -167,4 +165,47 @@ footer span {
     .twitter-share-button {
         margin-bottom: -8px;
     }
+}
+
+.color-picker {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-picker > div {
+  margin: 5px;
+}
+
+.corner-url {
+  width: 100%;
+}
+
+.input {
+  border: 1px solid #ddd;
+  height: 40px;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.input:hover,
+.input:focus {
+  background: #fafafa;
+}
+
+label {
+  /* font-weight: 600; */
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.examples {
+  margin-top: 30px;
 }
